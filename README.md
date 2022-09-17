@@ -38,7 +38,7 @@ Of course each command could be reversed, but some of them are harder to reverse
 
 ```bash
 # Your answer
-
+git clone git@github.com:LeliaE/git_lesson_new.git
 ```
 
 If everything is good you should see a directory named **git_lesson** in the following output:
@@ -79,7 +79,7 @@ Your job will be to replace the last line of the dialog, don't worry I wrote a s
 
 ```bash
 # Your answer
-sh replace_in_file character1/Ygritte.txt "[???]"
+sh replace_in_file character1/Ygritte.txt "You know nothing Jon Snow"
 ```
 
 Perfect now that you have done a modification on a file, you can commit it on git.
@@ -89,7 +89,7 @@ Perfect now that you have done a modification on a file, you can commit it on gi
 
 ```bash
 # Your answer
-
+git commit -m "commit" 
 ```
 
 Did not work? that's normal you can't commit files that you did not add to your local changes. To see the files that have changes we usually use `git status`
@@ -106,7 +106,7 @@ git status
 
 ```bash
 # Your answer
-
+git commit -m "commit" character1/Ygritte.txt
 ```
 
 
@@ -125,7 +125,7 @@ git status
 
 ```bash
 # Your answer
-
+git push
 ```
 
 Easy right? Now you can check that everything is ok on the github page.
@@ -168,7 +168,7 @@ python display_dialog.py --char1 character1/James.txt --char2 character2/Sylvia.
 
 ```bash
 # Your answer
-sh replace_in_file character1/James.txt "[???]"
+sh replace_in_file character1/James.txt "I'm Bond.James Bond."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -176,19 +176,19 @@ sh replace_in_file character1/James.txt "[???]"
 
 ```bash
 # Your answer
-
+git commit -m "commit" character1/James.txt
 ```
 
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 
@@ -211,7 +211,7 @@ python display_dialog.py --char1 character1/voice_fc.txt --char2 character2/Tyle
 
 ```bash
 # Your answer
-sh replace_in_file character2/Tyler.txt "[???]"
+sh replace_in_file character2/Tyler.txt " you DO NOT talk about Fight Club"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -219,19 +219,19 @@ sh replace_in_file character2/Tyler.txt "[???]"
 
 ```bash
 # Your answer
-
+git commit -m "commit" character2/Tyler.txt
 ```
 
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 
@@ -254,7 +254,7 @@ python display_dialog.py --char1 character1/appollo13.txt --char2 character2/Jim
 
 ```bash
 # Your answer
-sh replace_in_file character2/Jim.txt "[???]"
+sh replace_in_file character2/Jim.txt "Houston, we have a problem"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -262,13 +262,13 @@ sh replace_in_file character2/Jim.txt "[???]"
 
 ```bash
 # Your answer
-
+git commit -m "commit" character2/Jim.txt
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 
@@ -297,7 +297,7 @@ python display_dialog.py --char1 character1/Marty.txt --char2 character2/Emmet.t
 
 ```bash
 # Your anwser
-sh replace_in_file character2/Emmet.txt "[???]"
+sh replace_in_file character2/Emmet.txt "Roads? Where we're going we don't need roads."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -305,13 +305,13 @@ sh replace_in_file character2/Emmet.txt "[???]"
 
 ```bash
 # Your answer
-
+git commit -m "commit" character2/Emmet.txt
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 
@@ -344,7 +344,7 @@ For this time I'll give you the answer, Luke said *"NOOOOOOOOOOOOOO NOOOOOOOO"* 
 
 ```bash
 # Your answer
-sh replace_in_file character2/Luke.txt "[???]"
+sh replace_in_file character2/Luke.txt "NOOOOOOOOOOOOOO NOOOOOOOO"
 ```
 
 **<font color='#ffb799'>Now commit your changes (but don't push)</font>**
@@ -352,7 +352,7 @@ sh replace_in_file character2/Luke.txt "[???]"
 
 ```bash
 # Your answer
-
+git commit -m "commit" character2/Luke.txt
 ```
 
 
@@ -379,13 +379,13 @@ Ok, in fact I was wrong Luke didn't said it twice, it think it was just one simp
 
 ```bash
 # Your answer
-
+sh replace_in_file character2/Luke.txt "NOOOOO"
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "commit" character2/Luke.txt
 ```
 
 
@@ -401,19 +401,19 @@ Well after reviewing the scene (that you can find just here: https://www.youtube
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git log --oneline
 ```
 
 
 ```bash
 # Your answer
-
+ git reset --soft HEAD~
 ```
 
 **<font color='#ffb799'>Push your changes to the remote server.</font>**
@@ -421,7 +421,7 @@ Well after reviewing the scene (that you can find just here: https://www.youtube
 
 ```bash
 # Your answer
-
+git push
 ```
 
 
@@ -459,19 +459,19 @@ python display_dialog.py --char1 character1/Forrest.txt --char2 character2/Lady.
 
 ```bash
 # Your answer
-sh replace_in_file character1/Forrest.txt "[???]"
+sh replace_in_file character1/Forrest.txt "Life is like a box of chocolate."
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "commit Forrest Gump" character1/Forrest.txt
 ```
 
 
 ```bash
 # Your answer
-
+ git push
 ```
 
 
@@ -493,25 +493,25 @@ Perfect now let's imagine that we want to go back to the status we had before th
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git log 
 ```
 
 
 ```bash
 # Your answer
-
+git reset --hard ddbf363b35506678d2fc113d47c3c4e30c383ce1
 ```
 
 
 ```bash
 # Your answer
-
+git push -f
 ```
 
 # Exercise 8: Creating a branch 
@@ -519,6 +519,31 @@ Perfect now let's imagine that we want to go back to the status we had before th
 ***<font color='#ffb799'>Questions</font>***
 - **<font color='#ffb799'>Create a new branch and go on it.</font>**
 - **<font color='#ffb799'>Do the Forrest Gump correction (like in the begining of the previous exercise) and push it on the new branch.</font>**
+
+```bash
+# Your answer
+git branch new_branch
+```
+```bash
+# Your answer
+git checkout new_branch
+```
+
+```bash
+# Your answer
+sh replace_in_file character1/Forrest.txt "Life is like a box of chocolate."
+```
+
+```bash
+# Your answer
+git commit -m "commit Forrest Gump" character1/Forrest.txt
+```
+
+```bash
+# Your answer
+git push --set-upstream origin new_branch
+```
+
 
 # Exercise 8: Changing Branch 
 #### We will work with our last movie **Titanic** let's see the dialog:
@@ -529,12 +554,43 @@ Perfect now let's imagine that we want to go back to the status we had before th
 - **<font color='#ffb799'>edit answer/Jack.txt file with the replace_in_file script</font>**
 - **<font color='#ffb799'>Push changes to the master branch</font>**
 
+```bash
+# Your answer
+git checkout master
+```
+```bash
+# Your answer
+sh replace_in_file character2/Jack.txt "I'm the king of the world!"
+```
+
+```bash
+# Your answer
+git commit -m "commit Titanic" character2/Jack.txt
+```
+
+```bash
+# Your answer
+git commit -m "commit Forrest Gump" character1/Forrest.txt
+```
+
+```bash
+# Your answer
+git push --set-upstream origin new_branch
+```
+
+
 # Exercise 9: Merging two branches 
 #### Now we will merge the branch you created into the master branch.
 ***<font color='#ffb799'>Questions</font>***
 - **<font color='#ffb799'>Merge the branch you created in Exercise 7 in the master branch</font>**
 <br/>
 <br/>
+
+```bash
+# Your answer
+git merge new_branch
+```
+
 
 ***Pro-tips***
 > - Merging branches is not so trivial it could leads to conflicts. Normally you did not have any in the previous exercise and we will conver how to handle them in the next git learning session.
